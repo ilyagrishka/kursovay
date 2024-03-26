@@ -1,7 +1,7 @@
 from datetime import datetime
 import json
 import pytest
-from src.utils import open_file, sort_list, clean_data, mask_requisites, format_operation, filter_func, get_operations
+from src.utils import open_file, sort_list, clean_data, mask_requisites, format_operation, filter_func
 
 
 @pytest.fixture
@@ -19,8 +19,7 @@ def filtered_sample_data():
              'from': 'Maestro 1596837868705199',
              'id': 441945886,
              'operationAmount': {'amount': '31957.58',
-                                 'currency': {'code': 'RUB', 'name': 'руб.'}},
-             'state': 'EXECUTED',
+                                 'currency': {'code': 'RUB', 'name': 'руб.'}},             'state': 'EXECUTED',
              'to': 'Счет 64686473678894779589'},
             ]
 

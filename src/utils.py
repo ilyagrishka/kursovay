@@ -13,7 +13,7 @@ def open_file(name):
 
 def sort_list(new_list):
     """сортируем список и оставляем последние 5 операций и отбрасываем ошибочные записи"""
-    return sorted(new_list, key=lambda x: x["date"],reverse = True)
+    return sorted(new_list, key=lambda x: x['date'], reverse=True)
 
 
 def clean_data(data):
@@ -26,7 +26,6 @@ def clean_data(data):
         except KeyError:
             pass
     return cleaning_data
-
 
 
 def mask_requisites(requisites):
